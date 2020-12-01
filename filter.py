@@ -68,12 +68,12 @@ def Filter(PATH,Output_folder='.',outcome=0.):
             path = os.path.join(subdirs,file)
             date = file.split("_")[0]
             if  os.path.getsize(path)==0: # Filtering empty data
-                print 'EMPTY FILE:',path
+                print ('EMPTY FILE:',path)
                 continue
                 
             data =  np.loadtxt(path,unpack=True)
             if data.size == 0:
-                print 'NO DATA IN FILE:',path
+                print ('NO DATA IN FILE:',path)
                 continue
                 
             elif file.endswith('short.dat'):

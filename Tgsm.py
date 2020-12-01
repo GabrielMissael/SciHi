@@ -179,5 +179,5 @@ def check_LST(time,lon = -118.3011,lat = 28.9733):
     """
     t = Time(time, location =(lon,lat))
     LST = t.sidereal_time('mean')
-    print 'LST time:',LST
+    print ('LST time:',LST)
     return LST
