@@ -8,7 +8,9 @@ from astropy.time import Time
 from astropy.coordinates import SkyCoord
 from astropy import units as u
 from power_to_temperature import Radio_source_trans
-Cmap = cm.jet
+import copy
+
+Cmap = copy.copy(cm.get_cmap("jet"))
 Cmap.set_under("w")
 
 def trajectory(time,lon = -118.3011,lat = 28.9733):
