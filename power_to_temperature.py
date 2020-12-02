@@ -27,18 +27,18 @@ def Radio_source_trans(Radio_source, freqs, Bwidth):
     angle = 55.0    #degrees
     theta = deg2arcsec(angle)
 
-    power = P(Radio_source)
+    power = numpy.array(P(Radio_source), dtype=numpy.float64)
 
     #the units of the flux density are W m^-2 MHz^-1
-    flux = (2.0 * power / area) * Bwidth
+    flux = numpy.array((2.0 * power / area) * Bwidth, dtype=numpy.float64)
 
-    flux_Jy = flux * 1e26  # Jy
-    flux_Jy = flux_Jy * 1e3 # mJy
+    flux_Jy = np.array(flux * 1e26, dtype=numpy.float64)  # Jy
+    flux_Jy = np.array(flux_Jy * 1e3, dtype=numpy.float64) # mJy
 
-    freq = freqs * 1e6 #Hz
-    wavelength = (c / freq) * 100.  # cm
+    freq = np.array(freqs * 1e6, dtype=numpy.float64) #Hz
+    wavelength = np.array((c / freq) * 100., dtype=numpy.float64)  # cm
 
-    T = 1.36 * flux_Jy  * wavelength**2 / theta**2
+    T = np.array(1.36 * flux_Jy  * wavelength**2 / theta**2, dtype=numpy.float64)
 
     return T
 
