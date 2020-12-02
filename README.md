@@ -8,14 +8,14 @@ Repository for the analysis of data of SCI-HI observations, these notebooks and 
 
 | Package | Version |               
 |---------|:--------|
-| [astropy](http://www.astropy.org/) | 2.0.8 |
-| [h5py](https://www.h5py.org/) | 2.8.0 |
-| [healpy](https://healpy.readthedocs.io/en/latest/) | 1.12.4 |
-| [matplotlib](https://matplotlib.org/) | 2.2.3 | 
-| [numpy](http://www.numpy.org/) | 1.15.1 |
-| [pandas](https://pandas.pydata.org/) | 0.23.4 |
-| [scipy](https://www.scipy.org/) | 1.1.0 |
-| [seaborn](https://seaborn.pydata.org/) | 0.9.0 |
+| [astropy](http://www.astropy.org/) | 4.0.2 |
+| [h5py](https://www.h5py.org/) | 2.10.0 |
+| [healpy](https://healpy.readthedocs.io/en/latest/) | 1.14.0 |
+| [matplotlib](https://matplotlib.org/) | 3.3.3 | 
+| [numpy](http://www.numpy.org/) | 1.19.2 |
+| [pandas](https://pandas.pydata.org/) | 1.1.4 |
+| [scipy](https://www.scipy.org/) | 1.4.1 |
+| [seaborn](https://seaborn.pydata.org/) | 0.11.0 |
 
 
 All of these libraries, except for healpy are within the Anaconda instalation but if needed they may be installed using conda with the usual command:
